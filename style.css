@@ -1,0 +1,1415 @@
+body{ /*Body taggen*/
+    margin: 0;
+}
+
+.body_index{ /*body taggen på index*/
+    background-color: #B93939;
+}
+
+.index_image { /*bilde av bar i bakgrunnen på index*/
+    width: 100%;
+    background-image: url(images/pixabay_bar.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+header{ /*Header*/
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+
+header img{ /*Restaurant logo på header*/
+    height: 90px;
+}
+
+.text_container { /*Container som inneholder teksten*/
+    position: absolute;
+    color: white;
+    font-family: thrillers;
+    bottom: 0px;
+    margin-left: 55px;
+}
+
+.text_container h1{ /*Stor tekst på skjermen*/
+    font-size: 100px;
+}
+
+.text_container button{/*Knapp for å reservere bord*/
+    width: 256px;
+    height: 80px;
+    border-radius: 5px;
+    font-family: thrillers;
+    font-size: 60px;
+    color: white;
+    background-color: #B93939;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 70px;
+    
+}
+
+.text_container button:hover{/*Knapp for å reservere bord, på hover*/
+    background-color: #7a2626;
+}
+
+.reserver_body { /*body taggen på reserver siden*/
+    background-image: url(images/lasanga-Pixabay.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reserver_input_container{ /*hvit boks man skriver informasjon i*/
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.reserver_input_container_headline { /*Overskriften i den hvite boksen*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.antall_personer_form button { /*Hver knapp i antall personer formen*/
+    width: 350px;
+    height: 230px;
+    border: solid black 4px;
+    background-color: white;
+    cursor: pointer;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.antall_personer_form button:hover { /*Hver knapp i antall personer formen, på hover*/
+    background-color: rgb(187, 187, 187);
+}
+
+.antall_personer_button_row { /*Hver kollone av knapper i antall personer formen*/
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dato_klokkeslett_form{ /*formen som inneholder inputs for å ta inn dato og klokkeslett*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+#datepicker{ /*input for å ta inn dato*/
+    width: 500px;
+    height: 80px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    border-radius: 15px;
+    border: solid black 2px;
+    margin-bottom: 20px;
+}
+
+.klokkeslett_input{ /*input for å ta inn klokkeslett*/
+    width: 500px;
+    height: 80px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    border-radius: 15px;
+    border: solid black 2px;
+}
+
+.neste_knapp_container{ /*Container som inneholder neste knappen*/
+    width: 100%;
+    height: 120px;
+    position:absolute; 
+    bottom: 0;
+}
+
+.neste_knapp { /*Neste knappen*/
+    width: 250px;
+    height: 90px;
+    border-radius: 15px;
+    border: none;
+    background-color: #B93939;
+    color: white;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 39px;
+}
+
+.neste_knapp:hover { /*Neste knappen på siden for å ta inn dato og klokkeslett, på hover*/
+    background-color: #7a2626;
+}
+
+.personlig_info_form{ /*form som inneholder inputs for å ta inn personlig informasjon*/
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#personlig_info_input{ /*inputs på personlig info siden*/
+    width: 350px;
+    height: 40px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+
+/* gjemmer piler fra number input på Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*gjemmer piler fra number input på Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.sammendrag_notater_container { /*container som inneholder sammendrag av reservasjonen og input for spesielle forespørsler*/
+    display: flex;
+    width: 100%;
+}
+
+.sammendrag_container{ /*Container som inneholder sammendraget av reservasjonen*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.notater_form{ /*Formen hvor man skriver inn spesielle forespørsler*/
+    margin-left: 300px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.notater_form textarea{ /*Boksen man skriver spesielle forespørsler i*/
+    width: 350px;
+    height: 200px;
+    border: solid black 3px;
+    resize: none;
+}
+
+#reserver_bord_knapp{ /*Knapp på sammendrag siden hvor det står "reserver bord"*/
+    font-size: 35px;
+}
+
+.registrert_container{ /*Container som inneholder h1 taggen på reservasjon registrert siden*/
+    width: 100%;
+    text-align: center;
+}
+
+.registrert_headline{ /*Store teksten hvor det står om reservasjonen din er registrert eller ikke*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 75px;
+    margin-top: 200px;
+}
+
+.tilbake_hjem_container{ /*Container som inneholder Knappen hvor det står "tilbake hjem"*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.registrert_button{ /*Knappen hvor det står "tilbake hjem"*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: #B93939;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.registrert_button:hover{ /*Knappen hvor det står "tilbake hjem", på hover*/
+    background-color: #7a2626;
+}
+
+.header_link_container{ /*Div som inneholder lenke til andre sider på header*/
+    height: 120px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.header_link_container a{ /*lenken i header link container*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.header_link_container a:hover{ /*lenken i header link container, på hover*/
+    text-decoration: underline;
+}
+
+.logg_inn_knapp_container{ /*Div som inneholder knappen for å logge inn på index.php*/
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logg_inn_knapp_container h1{ /*Selve teksten i logg inn knapp container*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.logg_inn_knapp_link{ /*a tag hvor det står logg inn, på index.php*/
+    color: #B93939;
+    text-decoration: none;
+}
+
+.logg_inn_knapp_link:hover{ /*a tag hvor det står logg inn, på index.php, på hover*/
+    text-decoration: underline;
+}
+
+.logg_inn_knapp_mobil_breakline{ /*br tag mellom tekst og a tag, for mobiler*/
+    display: none;
+}
+
+.logg_inn_container { /*Container som inneholder formen for å logge inn*/
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logg_inn_container img{ /*La bella luna logo på logg inn siden*/
+    width: 150px;
+    height: 150px;
+}
+
+.logg_inn_container h1{ /*h1 tag i logg inn container*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.logg_inn_form input{ /*input taggene i formen for å skrive inn passord og brukernavn*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#logg_inn_form_knapp { /*Knapp hvor det står "logg inn" i formen*/
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 40px;
+    background-color: #B93939;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#logg_inn_form_knapp:hover { /*Knapp hvor det står "logg inn" i formen, på hover*/
+    background-color: #7a2626;
+}
+
+#feilPassord { /*Varsel som kommer opp hvis passord er feil*/
+    display: none;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: red;
+}
+
+.liste_content{ /*Siden som viser en liste av kunder sine reservasjoner*/
+    width: 100%;
+}
+
+table { /*table som inneholder info om reservasjoner*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    border-collapse: collapse;
+}
+
+table button{ /*knappene i table*/
+    cursor: pointer;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+table, th, td{ /*Lager borders på table*/
+    border: solid black 1px;
+}
+
+th, td { /*lager mer rom rundt tekst*/
+    padding: 10px;
+    text-align: left;
+}
+
+th { /*Overskriftene på tabellen*/
+    background-color: rgb(198, 198, 198);
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.notater_container{ /*Container som inneholder hvit boks med notater*/
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.notater_boks{ /*Hvite boksen hvor det står notater i*/
+    width: 900px;
+    height: 705px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.notater_boks h1{ /*Teksten i notater boksen*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.notat_ferdig_button_container{ /*container som inneholder ferdig knapp i notat boks*/
+    position: absolute;
+    bottom: 0;
+    width: 900px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.notat_ferdig_button_container button{ /*Ferdig knappen i notat boks*/
+    float: right;
+    height: 70px;
+    width: 200px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    background-color: #B93939;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+}
+
+.notat_ferdig_button_container button:hover{ /*Ferdig knappen i notat boks, på hover*/
+    background-color: #7a2626;
+}
+
+.bord_container { /*container som inneholder interface for å velge bord*/
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.bord_boks{ /*Hvite boksen hvor det er et bilde av restaurantens layout*/
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.bord_boks img{ /*Bilde av restaurant layout*/
+    width: 1000px;
+}
+
+.bord_boks button{ /*alle bord knappene*/
+    cursor: pointer;
+}
+
+#Bord1 { /*Bord 1 knapp*/
+    position: relative;
+    bottom: 480px;
+    left: 280px;
+}
+
+#Bord2 { /*Bord 2 knapp*/
+    position: relative;
+    bottom: 365px;
+    left: 45px;
+}
+
+#Bord3 { /*Bord 3 knapp*/
+    position: relative;
+    bottom: 235px;
+    left: 175px;
+}
+
+#Bord4 { /*Bord 4 knapp*/
+    position: relative;
+    bottom: 100px;
+    right: 65px;
+}
+
+#Bord5 { /*Bord 5 knapp*/
+    position: relative;
+    bottom: 480px;
+    left: 480px;
+}
+
+#Bord6 { /*Bord 6 knapp*/
+    position: relative;
+    bottom: 365px;
+    left: 610px;
+}
+
+#Bord7 { /*Bord 7 knapp*/
+    position: relative;
+    bottom: 230px;
+    left: 370px;
+}
+
+#Bord8 { /*Bord 8 knapp*/
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+}
+
+#bord_bilde_mobil{ /*Bilde av bordene i restauranten på mobil*/
+    display: none;
+}
+
+#bord_form_mobil{ /*Formen for å velge bord på mobil*/
+    margin-top: 20px;
+    display: none;
+}
+
+#bord_form_mobil select{ /*Dropdown for å velge bord på mobil*/
+    width: 150px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#bord_form_mobil button{ /*Registrer knappen for å registrere bord på mobil*/
+    width: 150px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    background-color: #B93939;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.bord_varsel_container{ /*Container som inneholder varsel om at bordet er registrert*/
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    backdrop-filter: blur(10px);
+}
+
+.bord_varsel_boks{ /*Hvit boks som inneholder varsel om at bord er registrert*/
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+
+.bord_varsel_boks h1{ /*Teksten i bord varsel boksen*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.bord_varsel_boks form{ /*Form som inneholder "Ferdig" knappen i bord varsel boks*/
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.bord_varsel_boks button{ /*Ferdig knappen i bord varsel boks*/
+    border: none;
+    color: white;
+    background-color: #B93939;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.bord_varsel_boks button:hover{ /*Ferdig knappen i bord varsel boks, på hover*/
+    background-color: #7a2626;
+}
+
+footer{ /*Footer*/
+    width: 100%;
+    height: 575px;
+    background-color: #B93939;
+}
+
+.footer_top { /*Øverste halvdelen av footer*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.footer_top img{ /*La bella luna logo på footer*/
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.footer_divider{ /*linjen mellom logo og lenker i footer*/
+    width: 85%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+}
+
+.footer_bottom { /*Nederste halvdelen av footer*/
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer_links_container{ /*Container som inneholder teksten i footer*/
+    width: 85%;
+    height: fit-content;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 175px;
+    line-height: 175px;
+}
+
+.footer_links_container a{ /*link i footer*/
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 7.5%;
+}
+
+.footer_links_container a:hover{ /*link i footer, på hover*/
+    text-decoration: underline;
+}
+
+.footer_links_container h1{ /*tekst i footer*/
+    position: absolute;
+    right: 0;
+    margin: 0;
+    margin-right: 7.5%;
+}
+
+.table_wrapper{ /*Container som inneholder table*/
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.opptatt_ledig_varsel { /*Halv-gjennomsiktige bokser som viser om et bord er opptatt eller ledig*/
+    width: 80px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.496);
+    position: absolute;
+    bottom: 25px;
+}
+
+.opptatt_ledig_varsel h1{ /*Teksten inne i boksen som viser om bordet er opptatt eller ikke*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.opptatt_ledig_mobil{ /*container som inneholder kolonner som viser hvilke bord som er opptatt og ledig på mobil*/
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.opptatt_ledig_mobil h1{ /*h1 tagger i kolonner som viser hvilke bord er opptatt og ledig*/
+    font-size: 20px;
+    font-family: forma-djr-display, sans-serif;
+}
+
+.ledig_mobil_container, .opptatt_mobil_container{ /*kolonner som viser hvilke bord som er opptatt og ledig på mobil*/
+    width: 50%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.308);
+    font-family: forma-djr-display, sans-serif;
+}
+
+.ledig_mobil_container h1{ /*"Ledig" tekst på bordene*/
+    color: rgb(30, 148, 30);
+}
+
+.opptatt_mobil_container h1{ /*"Opptatt" tekst på bordene*/
+    color: rgb(169, 38, 38);
+}
+
+#endre_dato_knapp{ /*Knapp for å endre dato*/
+    width: 100px;
+    height: 35px;
+    font-family: forma-djr-display, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #B93939;
+    border-radius: 7px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#endre_dato_knapp:hover{ /*Knapp for å endre dato, på hover*/
+    background-color: #7a2626;
+}
+
+#endre_dato_break { /*br tag mellom dato og endre knapp, vises på mobil*/
+    display: none;
+}
+
+.epost_bekreft{ /*Tekst hvor det står at man har fått epost*/
+    font-family: forma-djr-display, sans-serif;
+    font-size: 25px;
+}
+
+.bekreft_slett_container{ /*Container som inneholder boks hvor man bekrefter sletting av rad*/
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.bekreft_slett_boks { /*Hvit boks hvor man bekrefter sletting av rad*/
+    width: 900px;
+    height: 705px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.bekreft_slett_boks h1{ /*Tekst i hvit boks hvor man bekrefter sletting av rad*/
+    width: 100%;
+    text-align: center;
+    font-family: forma-djr-display, sans-serif;
+    font-size: 45px;
+}
+
+.bekreft_slett_knapper{ /*Container som inneholder knappene for å bekrefte sletting av rad*/
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 45px;
+    gap: 20px;
+}
+
+.bekreft_slett_knapper button{ /*Knappene for å bekrefte eller avbryte sletting av rad*/
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-family: forma-djr-display, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#avbryt_knapp{ /*Knapp for å avbryte sletting*/
+    background-color: rgb(188, 188, 188);
+}
+
+#avbryt_knapp:hover{ /*Knapp for å avbryte sletting, på hover*/
+    background-color: rgb(145, 145, 145);
+}
+
+#bekreft_knapp{ /*Knapp for å bekrefte sletting*/
+    background-color: #B93939;
+}
+
+#bekreft_knapp:hover{ /*Knapp for å bekrefte sletting, på hover*/
+    background-color: #7a2626;
+}
+
+.hero_image_om_oss{ /*Bilde på forsiden av om oss siden*/
+    width: 100%;
+    height: 674px;
+    background-image: url(images/restaurant-hero-omoss.jpg); /*https://pixabay.com/photos/restaurant-cooking-chef-kitchen-1284351/*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.hero_image_om_oss h1{ /*Teksten foran hero bilde på om oss siden*/
+    text-align: center;
+    color: white;
+    font-family: forma-djr-display, sans-serif;
+    font-size: 100px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.meny_om_oss{ /*Container som inneholder lenken til meny og tekst over linken på om oss siden*/
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.meny_om_oss h1{ /*overskrift i meny_om_oss container*/
+    font-family: forma-djr-display, sans-serif;
+    font-size: 40px;
+}
+
+.meny_om_oss a{ /*lenken i meny_om_oss container*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: none;
+    color: #B93939;
+}
+
+.meny_om_oss a:hover{ /*lenken i meny_om_oss container, på hover*/
+    text-decoration: underline;
+}
+
+.om_oss_info{ /*Container som inneholder info om restauranten i om siden*/
+    height: 475px;
+    width: 100%;
+    text-align: center;
+}
+
+.om_oss_info h1{ /*h1 tag i om oss info conatiner*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.om_oss_info p{ /*p tag i om oss info conatiner*/
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+/*-----------------RESPONSITIVITET--------------------*/
+@media (max-width: 1467px) {
+    .reserver_input_container {
+        width: 950px;
+    }
+    .footer_links_container {
+        font-size: 12px;
+    }
+    .footer_links_container a{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .footer_links_container{
+        height: 175px;
+    }
+    .footer_links_container h1{ /*tekst i footer*/
+        float: none;
+    }
+    .footer_links_container a{ /*link i footer*/
+        float: none;
+    }
+    .reserver_input_container {
+        width: 950px;
+    }
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 280px;
+        height: 200px;
+        font-size: 40px;
+    }
+    .notater_form{ /*Formen hvor man skriver inn spesielle forespørsler*/
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1232px) {
+    .table_wrapper {
+        border: solid black 1px;
+        margin-bottom: 150px;
+    }
+
+    .hero_image_om_oss h1{
+        font-size: 60px;
+    }
+
+    .om_oss_info h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1183px) {
+    .footer_links_container {
+        flex-direction: column;
+        align-content: normal;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .footer_links_container a{
+        position: relative;
+        margin-left: 0;
+    }
+
+    .footer_links_container h1{
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    .opptatt_ledig_mobil{ /*Kolonner som viser hvilke bord som er opptatt og ledig på mobil*/
+        display: flex;
+    }
+
+    #bord_bilde_normal{
+        display: none;
+    }
+    #bord_bilde_mobil{
+        display: block;
+        width: 100%;
+    }
+    .bord_boks{
+        width: 80%;
+        height: fit-content;
+        position: relative;
+        left: 0%;
+        top: 0;
+        -webkit-transform: none;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    #bord_form_normal{
+        display: none;
+    }
+
+    #bord_form_mobil{
+        display: block;
+    }
+
+    .bord_container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1020px) {
+    .text_container h1{ /*Stor tekst på skjermen*/
+        font-size: 75px;
+    }
+    
+    .text_container button{/*Knapp for å reservere bord*/
+        width: 200px;
+        height: 80px;
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .reserver_input_container {
+        width: 850px;
+    }
+
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 240px;
+        height: 190px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 990px) {
+    .notater_boks {
+        width: 85%;
+        padding: 0;
+    }
+
+    .bekreft_slett_boks {
+        width: 85%;
+        padding: 0;
+    }
+
+    .notat_ferdig_button_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .notat_ferdig_button_container button{
+        float: none;
+    }
+
+    .notater_boks h1{
+        padding-left: 20px;
+    }
+
+    .om_oss_info{
+        margin-bottom: 0px
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .neste_knapp_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .neste_knapp {
+        margin-right: 0px;
+    }
+
+    .text_container { /*Container som inneholder teksten*/
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text_container h1{ /*Stor tekst på skjermen*/
+        font-size: 60px;
+    }
+
+    .text_container button{/*Knapp for å reservere bord*/
+        margin-top: 30px;
+    }
+
+    .reserver_input_container {
+        width: 750px;
+    }
+
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 220px;
+        height: 170px;
+        font-size: 30px;
+    }
+
+    .antall_personer_button_row { /*Hver kollone av knapper i antall personer formen*/
+        gap: 15px;
+    }
+
+    .sammendrag_notater_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sammendrag_container {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    #input_container_sammendrag{
+        position: absolute;
+        top: 550px;
+        padding-bottom: 300px;
+    }
+
+    #reserver_body_sammendrag {
+        height: 1100px;
+    }
+
+    .notater_form {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 805px) {
+    #endre_dato_break{
+        display: block;
+    }
+    #endre_dato_knapp {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 5px;
+        width: 100px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .registrert_headline {
+        margin-top: 20px;
+    }
+    #reserver_bord_knapp{
+        font-size: 22px;
+    }
+    .notater_form textarea{
+        height: 150px;
+        width: 250px;
+    }
+    .reserver_input_container {
+        width: 600px;
+        height: 480px;
+    }
+
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 180px;
+        height: 160px;
+        font-size: 27px;
+    }
+
+    .antall_personer_button_row { /*Hver kollone av knapper i antall personer formen*/
+        gap: 15px;
+        height: 170px;
+    }
+    .dato_klokkeslett_form{ /*formen som inneholder inputs for å ta inn dato og klokkeslett*/
+        font-size: 30px;
+    }
+    
+    #datepicker{ /*input for å ta inn dato*/
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .klokkeslett_input{ /*input for å ta inn klokkeslett*/
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .neste_knapp { /*Neste knappen*/
+        width: 190px;
+        height: 60px;
+        font-size: 35px;
+        margin-right: 30px;
+    }
+
+    .neste_knapp_container{ /*Container som inneholder neste knappen*/
+        width: 100%;
+        height: 60px;
+        position:absolute; 
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    #personlig_info_input{
+        width: 270px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 781px) {
+    .om_oss_info h1{
+        font-size: 40px;
+    }
+
+    .om_oss_info p{
+        font-size: 40px;
+    }
+
+    .logg_inn_knapp_container {
+        text-align: center;
+        width: 130px;
+    }
+
+    .logg_inn_knapp_container h1{
+        font-size: 17px;
+    }
+
+    .logg_inn_knapp_mobil_breakline {
+        display: inline;
+    }    
+}
+
+@media (max-width: 646px) {
+    .registrert_headline {
+        font-size: 60px;
+    }
+
+    .reserver_input_container {
+        width: 510px;
+        height: 460px;
+    }
+
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 180px;
+        height: 160px;
+        font-size: 22px;
+    }
+
+    .antall_personer_button_row { /*Hver kollone av knapper i antall personer formen*/
+        gap: 12px;
+        height: 170px;
+    }
+
+    #personlig_info_input{
+        width: 240px;
+    }
+
+    .personlig_info_form {
+        font-size: 25px;
+    }
+
+    .bord_varsel_boks {
+        width: 80%;
+    }
+
+    .bord_varsel_boks form {
+        width: 100%;
+    }
+
+    .bord_varsel_boks h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 576px) {
+    .meny_om_oss h1{
+        font-size: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .meny_om_oss a{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 534px) {
+    .om_oss_info{
+        margin-bottom: 0px;
+    }
+
+    .bekreft_slett_boks h1{
+        font-size: 30px;
+    }
+
+    .bekreft_slett_knapper {
+        gap: 10px;
+    }
+
+    .bekreft_slett_knapper button{
+        width: 130px;
+    }
+
+    .epost_bekreft {
+        font-size: 15px;
+    }
+
+    #datepicker{ /*input for å ta inn dato*/
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .klokkeslett_input{ /*input for å ta inn klokkeslett*/
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .neste_knapp { /*Neste knappen*/
+        float: none;
+        margin-right: 0px;
+    }
+
+    .neste_knapp_container{ /*Container som inneholder neste knappen*/
+        text-align: center;
+    }
+
+    .text_container { /*Container som inneholder teksten*/
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text_container h1{ /*Stor tekst på skjermen*/
+        font-size: 40px;
+    }
+
+    .text_container button{/*Knapp for å reservere bord*/
+        font-size: 35px;
+        width: 180px;
+        height: 60px;
+        margin-top: 50px;
+    }
+
+    .reserver_input_container {
+        width: 330px;
+        padding: 10px;
+        height: 530px;
+    }
+
+    .antall_personer_form button { /*Hver knapp i antall personer formen*/
+        width: 180px;
+        height: 160px;
+        font-size: 20px;
+    }
+
+    .antall_personer_button_row { /*Hver kollone av knapper i antall personer formen*/
+        gap: 6px;
+        height: 160px;
+    }
+
+    #personlig_info_input {
+        width: 100%;
+    }
+
+    .personlig_info_form {
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .registrert_headline {
+        font-size: 50px;
+    }
+
+    .logg_inn_form input{
+        width: 250px;
+    }
+}
+
+@media (max-width: 428px) {
+    .footer_links_container {
+        font-size: 10px;
+    }
+    .footer_links_container a{
+        font-size: 20px;
+    }
+    .footer_top img{ /*La bella luna logo på footer*/
+        width: 300px;
+        height: 300px;
+    }
+}
